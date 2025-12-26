@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Location</title>
+</head>
+<style>
+    body{
+        background-image: url(project/image12.jpg);
+        background-size: cover;
+        
+    }
+    #yes{
+      background:rgba(145, 116, 116, 0.847);
+      width: 350px;
+      height: 300px;
+      border-radius: 10px;
+      position:absolute;
+      left: 400px;
+    }
+    a{
+        text-decoration: none;
+        background-color: yellowgreen;
+        color: black;
+        border: solid black;
+        border-radius: 5px;
+    }
+   
+    
+    
+</style>
+
+
+
+<body>
+    <a href="home.html">&#8592 Back</a>
+  
+<h1 style="text-align: center;"><u>Select Parking Location</u></h1>
+
+<div id="yes">
+    <h2 style="text-align: center;">Service Available - </h2>
+
+&#9733 Lucknow <select onchange="goToPage(this.value)">
+    <option value="">Select area</option>
+
+    <option value="book.html">sector 12, Gomti Nagar</option>
+    <option value="book.html">Rudiya cahuraha, Alambagh</option>
+    <option value="book.html">Matiyari</option>
+    <option value="book.html">Chowk,Hazratganj</option>
+</select> <br><br>
+
+&#9733 Mumbai <select onchange="goToPage(this.value)">
+    <option>select area</option>
+    <option value="book.html">Linking Road,Bandra West</option>
+    <option value="book.html">Colaba Causeway,Colaba</option>
+    <option value="book.html">Kurla West,Near Phoenix Marketcity</option>
+    <option value="book.html">Hiranandani Garden,Powai</option>
+
+</select><br><br>
+
+&#9733 New Delhi <select onchange="goToPage(this.value)">
+    <option>select area</option>
+    <option value="book.html">Karol Bagh Market</option>
+    <option value="book.html">Saket District Center</option>
+    <option value="book.html">Roshini Sector 3</option>
+    <option value="book.html">Dwaraka Sector 10 Market</option>
+
+</select><br><br>
+
+&#9733 Agra <select onchange="goToPage(this.value)">
+    <option>select area</option>
+    <option value="book.html">Near Taj Mahal,Tajganj</option>
+    <option value="book.html">Fatehabad Road,Near Hotel Area</option>
+    <option value="book.html">Dayal Bagh Colony</option>
+    <option value="book.html">MG Road,Near market,Kamlanagar</option>
+
+</select><br><br></div>
+
+
+
+
+<script>
+function goToPage(page) {
+    if (page) {
+        window.location.href = page;
+    }
+}
+</script>
+
+</body>
+</html>

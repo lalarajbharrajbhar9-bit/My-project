@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact section</title>
+</head>
+
+<style>
+    body{
+        background-image: url("project/image7.jpg");
+        background-size: cover;
+    }
+    #mee{
+        max-width: 50%;
+        background-color: rgba(184, 155, 155, 0.324);
+        border-radius: 10px;
+        border: solid;
+    }
+    textarea{
+        margin-left: 50px;
+    }
+    a{
+        text-decoration: none;
+        border: solid;
+        color: black;
+        background-color: yellowgreen;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+</style>
+
+
+
+<body>
+    <a href="home.html">Home</a>
+
+    <div class="contact-info">
+      <h2> <u> Get in Touch </u></h2>
+      <p><b> &#128222 Phone No:</b> +91 987654XXXX</p>
+      <p><b> &#9993 Email :</b> smartparking@gmail.com</p>
+      <p><b> &#128205 Address :</b> Lucknow, Uttar Pradesh</p>
+    </div>
+
+
+    <div id="mee">
+        <h2>Contact Us</h2>
+        <form action="contact.php" method="post" class="contact-form">
+      Name: <input type="text" name="name"   placeholder="Your Name" required><br><br>
+      Email: <input type="email" name="email" placeholder="Your Email" required><br><br>
+     <textarea  name="message" placeholder="Your Message" rows="4" required></textarea><br><br>
+      <button type="submit" style="margin-left: 5px;">Send Message</button><br>
+    </form>
+    </div>
+    
+</body>
+</html>

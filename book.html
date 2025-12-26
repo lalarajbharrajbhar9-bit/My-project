@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking </title>
+</head>
+<style>
+    .form-container {
+  max-width: 400px;
+  margin: 30px auto;
+  background: rgba(182, 153, 153, 0.632);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+ #available { background: lightgreen; }
+    #occupied { background: tomato; }
+        .parking-lot {
+      display: grid;
+      grid-template-columns: repeat(4, 100px);
+      gap: 15px;
+      justify-content: center;
+      margin: 30px auto;
+    }
+        .slot {
+      width: 100px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    a{
+      text-decoration: none;
+      border: solid;
+      color: black;
+      background-color: greenyellow;
+      border-radius: 5px;
+    }
+ 
+</style>
+<body>
+  <a href="location.html">&#8592 Back</a>
+  
+  <h2 style="text-align:center;"><u> Available Parking Slots </u></h2>
+    <div class="parking-lot">
+      <div class="slot " id="available" >A1</div>
+      <div class="slot" id="occupied" >A2</div>
+      <div class="slot " id="available" >A3</div>
+      <div class="slot " id="available" >A4</div>
+      <div class="slot " id="available" >B1</div>
+      <div class="slot" id="occupied" >B2</div>
+      <div class="slot " id="available" >B3</div>
+      <div class="slot " id="available" >B4</div>
+    </div>
+    
+
+
+
+
+
+
+    <div>
+    <h2 style="text-align:center;"><u>Book a Slot</u></h2>
+    <div class="form-container">
+      <form action="book.php" method="post">
+      Name: <input type="text" name="name" placeholder="Your Name"><br><br>
+      Vehicle no. :<input type="text" name="gadi" placeholder="Vehicle Number"><br><br>
+       <!-- <input type="number" name="slot" placeholder="Enter slot number"><br><br> -->
+        Select your slot :<select name="slot">
+          <option>A1</option>
+          <option>A2</option>
+          <option>A3</option>
+          <option>A4</option>
+          <option>B1</option>
+          <option>B2</option>
+          <option>B3</option>
+          <option>B4</option>
+        </select><br><br>
+          Time: <input type="time" name ="time"><br><br>
+       <button class="btn btn-primary">Book Now</button> </form>
+    </div>
+    </div>
+  
+</body>
+</html>
